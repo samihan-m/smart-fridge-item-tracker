@@ -80,9 +80,9 @@ class ItemDisplay(GridLayout):
 
     def __init__(self, **kwargs):
         super(ItemDisplay, self).__init__(**kwargs);
-        #self.orientation = 'vertical';
+
         self.cols = 1;
-        #self.fridge = Fridge();
+        self.padding = 5;
         
         #setting new item fields
         self.new_item_day = None;
