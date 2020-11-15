@@ -15,21 +15,6 @@ Organization plan:
             -addItem
             -removeItem
             -modifyItem
-    
-    FridgeItem
-        fields:
-            str[] name
-            str[] type (general category; dairy, vegetable, etc.)
-            Date[] expiry
-            Date[] date_obtained
-            int[] quantity (unitless)
-            (the first value in the array is the current value, the second is the most recent, third is second=most recent, etc. tracks modifications)
-            boolean trackChanges
-            
-        functions:
-            -constructor (all fields required, some can be blank)
-            -getters
-            -setters (have sanitization)
 """
 from FridgeItem import FridgeItem
 
